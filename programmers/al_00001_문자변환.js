@@ -30,8 +30,6 @@ function solution(begin, target, words) {
                 let test = str;
                 let test2 = fn_check_str(str, check_str);
 
-                console.log(test, test2, arr);
-
                 if(fn_check_str(str, check_str) && ! ex_arr.includes(check_str)) {
                     ex_arr.push(check_str);
                     dfs(check_str, ex_arr, sum + 1);
